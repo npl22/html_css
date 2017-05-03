@@ -60,7 +60,7 @@
 }
 
 .masthead-links a,
-.masthead-links button, 
+.masthead-links button,
 .masthead-links time {
 	margin-right: 10px;
 }
@@ -71,4 +71,16 @@
 
 .masthead-links strong {
 	color: green;
+}
+
+.masthead-links li:last-of-type {
+	border-right: none;
+}
+
+// first-of-type, the first kind of tag in its parent
+// 1) select language tag
+// 2) the first li
+// 3) the a tags in the first li
+.language-nav li:first-of-type a {
+	font-weight: bold;
 }

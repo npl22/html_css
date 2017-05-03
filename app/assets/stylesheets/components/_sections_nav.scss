@@ -1,0 +1,27 @@
+.section-nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.section-nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.section-nav li {
+  margin: 0 10px;
+  font-family: $sans-serif;
+  cursor: pointer;
+}
+
+// using the :not(selector)  selector
+.section-nav li:hover:not(:last-child) {
+  background-color: $light-gray;
+}
+
+.section-nav a {
+  text-transform: uppercase;
+  font-size: 10px;
+}
